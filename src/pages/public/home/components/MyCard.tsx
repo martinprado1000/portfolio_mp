@@ -12,7 +12,7 @@ import {
   ListItem,
   ListItemIcon,
   ListItemText,
-  Avatar, // Usaremos Avatar para la imagen redonda (opcional)
+  Avatar,
 } from "@mui/material";
 import { Email, Phone, LocationOn, LinkedIn } from "@mui/icons-material";
 
@@ -23,30 +23,28 @@ export default function MyCard() {
     <Card
       sx={{
         display: "flex",
-        width: "100%", // Ocupa el 100% del contenedor padre
-        //maxWidth: { xs: "100%", sm: 600, md: 800 }, // Adaptable por breakpoint
+        width: "100%",
         margin: "auto",
         boxShadow: 3,
         borderRadius: 2,
         overflow: "hidden",
-        alignItems: "center", // Alinea verticalmente los elementos
-        p: 2, // Padding general para separar del borde
+        alignItems: "center",
+        p: 2,
       }}
     >
-      {/* Imagen redonda con espacio */}
       <Box
         sx={{
           width: 150,
           height: 150,
-          minWidth: 150, // Evita que se reduzca
-          borderRadius: "50%", // Hace la imagen redonda
+          minWidth: 150,
+          borderRadius: "50%",
           overflow: "hidden",
           border: `0.5px solid ${theme.palette.primary.main}`,
-          marginRight: 5, // Espacio entre imagen y datos
-          boxShadow: 2, // Sutil sombra para profundidad
+          marginRight: 5,
+          boxShadow: 2,
         }}
       >
-        <Avatar
+        <Avatar 
           src="/MartinPrado.jpg"
           alt="Imagen Martín Prado"
           sx={{
@@ -59,7 +57,6 @@ export default function MyCard() {
         />
       </Box>
 
-      {/* Contenido */}
       <Box
         sx={{
           display: "flex",
@@ -68,9 +65,6 @@ export default function MyCard() {
         }}
       >
         <CardContent sx={{ p: 1 }}>
-          {" "}
-          {/* Reducir padding interno si es necesario */}
-          {/* Nombre y título */}
           <Typography variant="h5" component="div" fontWeight="bold">
             Martín Fernando Pradooo
           </Typography>
@@ -78,7 +72,6 @@ export default function MyCard() {
             Desarrollador de aplicaciones, stak MERN | Técnico en infraestructura
           </Typography>
           <Divider sx={{ my: 1 }} />
-          {/* Datos de contacto */}
           <List dense disablePadding>
             <ListItem disableGutters>
               <ListItemIcon sx={{ minWidth: 32 }}>

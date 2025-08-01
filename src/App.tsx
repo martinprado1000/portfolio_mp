@@ -41,73 +41,18 @@ const router = createBrowserRouter(
         </AuthUserProvider>
       ),
       children: [
-        // Rutas sin sesión (públicas)
-        {
-          element: <SessionRoute />,
-          children: [
-            { path: "/sign-in", element: <SignIn /> },
-            { path: "/sign-up", element: <SignUp /> },
-          ],
-        },
-
-        // Rutas protegidas: solo usuario logeados y cualquier rol de usuario.
-        {
-          element: <ProtectedRoute role={RolesEnum.USER} />,
-          // children: [
-          //   { path: "/", element: <Dashboard /> },
-          //   { path: "/home", element: <Dashboard /> },
-          //   { path: "/profile", element: <ProfilePage /> },
-          //   {
-          //     path: "/dashboard",
-          //     element: (
-          //       <Suspense fallback={<DashboardLoading />}>
-          //         <Dashboard />
-          //       </Suspense>
-          //     )
-          //   },
-          // ],
-          // USANDO LA FUNCION SuspendedDashboard PUEDO RESUMIR EL CODIGO DE ARRIBA DE LA SIGUIENTE MANERA
-          children: [
-            {
-              element: <MenuRoute />, //
-              children: [
-                // { path: "/", element: SuspendedDashboard },
-                // { path: "/home", element: SuspendedDashboard },
-                // { path: "/dashboard", element: SuspendedDashboard },
-                // { path: "/profile", element: <Profile /> },
-              ],
-            },
-          ],
-        },
-
-        // Rutas protegidas: solo usuario logeados y con rol: ADMIN y SUPERADMIN
-        {
-          element: <ProtectedRoute role={RolesEnum.ADMIN} />,
-          children: [
-            {
-              element: <MenuRoute />,
-              children: [{ path: "/users", element: <Users /> }],
-            },
-          ],
-        },
 
         // Rutas publicas
         { path: "/", element: <Home /> },
         { path: "/home", element: <Home /> },
         { path: "/errorPage", element: <ErrorPage /> },
         { path: "/fatalErrorPage", element: <FatalErrorPage /> },
-        { path: "/testpage", element: <TestPage /> },
         { path: "*", element: <ErrorPage /> }, // 404
       ],
 
       errorElement: <ErrorPage />, // Manejo global de errores
     },
   ]
-  // {
-  //   future: {
-  //     v7_startTransition: true, // Bandera para el warning
-  //   },
-  // }
 );
 
 function App() {
@@ -115,63 +60,3 @@ function App() {
 }
 
 export default App;
-
-// // Configuración del router con future flag y rutas
-// const router = createBrowserRouter([
-//   {
-//     path: "/",
-//     element: (
-//       <AuthUserProvider>
-//         <UsersProvider>
-//             {/* Las rutas específicas se definen en "children" más abajo */}
-//             <Outlet />
-//         </UsersProvider>
-//       </AuthUserProvider>
-//     ),
-//     children: [
-//       // Rutas de sesión (públicas)
-//       {
-//         element: <SessionRoute />,
-//         children: [
-//           { path: "/register", element: <RegisterPage /> },
-//           { path: "/login", element: <LoginPage /> },
-//           { path: "/recoveryPassword", element: <RecoveryPasswordPage /> },
-//         ],
-//       },
-//       // Rutas protegidas para USER
-//       {
-//         element: <ProtectedRoute rol="USER" />,
-//         children: [
-//           { path: "/", element: <HomePage /> },
-//           { path: "/home", element: <HomePage /> },
-//           { path: "/profile", element: <ProfilePage /> },
-//         ],
-//       },
-//       // Rutas protegidas para ADMIN
-//       {
-//         element: <ProtectedRoute rol="ADMIN" />,
-//         children: [
-//           { path: "/users", element: <UsersPage /> },
-//           { path: "/usersAdd", element: <UsersAddPage /> },
-//           { path: "/users/:id", element: <UsersEditPage /> },
-//         ],
-//       },
-//       // Otras rutas (públicas)
-//       { path: "/errorPage", element: <ErrorPage /> },
-//       { path: "/fatalErrorPage", element: <FatalErrorPage /> },
-//       { path: "/test", element: <Test /> },
-//       { path: "*", element: <ErrorPage /> }, // 404
-//     ],
-//     errorElement: <ErrorPage />, // Manejo global de errores
-//   },
-// ], {
-//   future: {
-//     v7_startTransition: true, // Bandera para el warning
-//   },
-// });
-
-// function App() {
-//   return <RouterProvider router={router} />;
-// }
-
-//export default App;

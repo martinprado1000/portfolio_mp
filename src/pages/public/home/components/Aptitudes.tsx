@@ -1,4 +1,3 @@
-import React from 'react';
 import { 
   Box, 
   Typography, 
@@ -15,14 +14,14 @@ const skills = [
   { icon: <SiJavascript size={24} />, name: 'JavaScript', color: '#F7DF1E' },
   { icon: <SiNestjs size={24} />, name: 'Nest.js', color: '#E0234E' },
   { icon: <FaNodeJs size={24} />, name: 'Node.js', color: '#68A063' },
-  { icon: <FaReact size={24} />, name: 'React', color: '#61DAFB' }, // Azul React
-  { icon: <SiMongodb size={24} />, name: 'MongoDB', color: '#47A248' }, // Verde MongoDB
-  { icon: <SiMui size={24} />, name: 'Material-UI', color: '#007FFF' }, // Azul MUI
-  { icon: <FaBootstrap size={24} />, name: 'Bootstrap', color: '#7952B3' }, // Morado Bootstrap
-  { icon: <FaGit size={24} />, name: 'Git', color: '#F05032' }, // Rojo Git
-  { icon: <FaDocker size={24} />, name: 'Docker', color: '#2496ED' }, // Azul Docker
-  { icon: <SiMysql size={24} />, name: 'MySQL', color: '#4479A1' }, // Azul MySQL
-  { icon: <SiPhp size={24} />, name: 'PHP', color: '#777BB4' }, // Morado PHP
+  { icon: <FaReact size={24} />, name: 'React', color: '#61DAFB' },
+  { icon: <SiMongodb size={24} />, name: 'MongoDB', color: '#47A248' },
+  { icon: <SiMui size={24} />, name: 'Material-UI', color: '#007FFF' },
+  { icon: <FaBootstrap size={24} />, name: 'Bootstrap', color: '#7952B3' },
+  { icon: <FaGit size={24} />, name: 'Git', color: '#F05032' },
+  { icon: <FaDocker size={24} />, name: 'Docker', color: '#2496ED' },
+  { icon: <SiMysql size={24} />, name: 'MySQL', color: '#4479A1' },
+  { icon: <SiPhp size={24} />, name: 'PHP', color: '#777BB4' },
 ];
 
 const SkillsSection = () => {
@@ -68,8 +67,8 @@ const SkillsSection = () => {
                     textAlign: 'center',
                     borderRadius: 2,
                     transition: 'all 0.3s ease',
-                    width: '100%', // Mismo ancho para todos
-                    minHeight: '100px', // Altura uniforme (opcional)
+                    width: '100%',
+                    minHeight: '100px',
                     display: 'flex',
                     flexDirection: 'column',
                     alignItems: 'center',
@@ -78,7 +77,7 @@ const SkillsSection = () => {
                       transform: 'translateY(-5px)',
                       boxShadow: 3,
                       '& .skill-text': {
-                        color: skill.color, // Texto toma el color del ícono
+                        color: skill.color,
                         fontWeight: 600,
                       },
                       '& .skill-icon': {

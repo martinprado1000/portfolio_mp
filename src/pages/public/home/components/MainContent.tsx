@@ -17,8 +17,9 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import RssFeedRoundedIcon from "@mui/icons-material/RssFeedRounded";
 import MyCard from "./MyCard";
 import Aptitudes from "./Aptitudes";
-import { HistorialDeEmpleos } from "./HistorialDeEmpleos"
+import { HistorialDeEmpleos } from "./HistorialDeEmpleos";
 import Latest from "./Latest";
+import { Aplicactions } from "./Aplications";
 
 // const cardData = [
 //   {
@@ -114,11 +115,7 @@ const StyledTypography = styled(Typography)({
   wordBreak: "break-word",
 });
 
-
-
 export default function MainContent() {
-
-
   return (
     <Box sx={{ display: "flex", flexDirection: "column", gap: 2 }}>
       <Box id="datos-personales">
@@ -127,16 +124,15 @@ export default function MainContent() {
       <Box id="aptitudes">
         <Aptitudes />
       </Box>
-      <Box id="historial-empleos">
-        <HistorialDeEmpleos />
-      </Box>
       <Box id="educacion">
         <Latest />
       </Box>
+      <Box id="historial-empleos">
+        <HistorialDeEmpleos />
+      </Box>
       <Box id="aplicaciones">
-        {/* Tu componente de aplicaciones aquí si lo tienes */}
+        <Aplicactions />
       </Box>
     </Box>
   );
 }
-

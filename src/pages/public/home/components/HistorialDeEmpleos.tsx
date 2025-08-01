@@ -51,7 +51,7 @@ const StyledTypography = styled(Typography)({
   WebkitLineClamp: 20,
   overflow: "hidden",
   textOverflow: "ellipsis",
-  whiteSpace: "pre-line", // Respeta saltos de línea
+  whiteSpace: "pre-line",
   wordBreak: "break-word",
 });
 
@@ -83,7 +83,7 @@ export function HistorialDeEmpleos() {
               height: "100%",
               display: "flex",
               flexDirection: "column",
-              overflow: "hidden", // Evita que el contenido sobresalga
+              overflow: "hidden",
             }}
           >
             <CardMedia
@@ -91,9 +91,9 @@ export function HistorialDeEmpleos() {
               alt="Toolsoft"
               image={"./Toolsoft.PNG"}
               sx={{
-                height: 200, // Altura fija para todas las imágenes
-                objectFit: "contain", // Mantiene la relación de aspecto
-                backgroundColor: "#f5f5f5", // Fondo por si la imagen no cubre todo
+                height: 200,
+                objectFit: "contain",
+                backgroundColor: "#f5f5f5",
                 width: "100%",
                 p: 1,
               }}
@@ -134,9 +134,9 @@ export function HistorialDeEmpleos() {
               alt="Wisetek"
               image={"w.PNG"}
               sx={{
-                height: 200, // Altura fija para todas las imágenes
-                objectFit: "contain", // Mantiene la relación de aspecto
-                backgroundColor: "#f5f5f5", // Fondo por si la imagen no cubre todo
+                height: 200,
+                objectFit: "contain",
+                backgroundColor: "#f5f5f5",
                 width: "100%",
                 p: 1,
               }}
@@ -175,9 +175,9 @@ export function HistorialDeEmpleos() {
               alt="IBM"
               image={"IBM.PNG"}
               sx={{
-                height: 200, // Altura fija para todas las imágenes
-                objectFit: "contain", // Mantiene la relación de aspecto
-                backgroundColor: "#f5f5f5", // Fondo por si la imagen no cubre todo
+                height: 200,
+                objectFit: "contain",
+                backgroundColor: "#f5f5f5",
                 width: "100%",
                 p: 1,
               }}
