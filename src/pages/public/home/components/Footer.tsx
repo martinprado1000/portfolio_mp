@@ -12,7 +12,7 @@ function Copyright() {
   return (
     <Typography variant="body2" sx={{ color: 'text.secondary' }}>
       {/* {'Copyright © '} */}
-      <Link color="text.secondary" href="https://web-react-portfolio.onrender.com">
+      <Link color="text.secondary" href="https://portfolio-mp.onrender.com/">
         MPsystems
       </Link>
       &nbsp;
@@ -66,8 +66,8 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://web-react-portfolio.onrender.com/"
-              aria-label="GitHub"
+              href="https://portfolio-mp.onrender.com/"
+              aria-label="Website"
               sx={{ alignSelf: 'center' }}
             >
               <Public />
@@ -84,7 +84,7 @@ export default function Footer() {
             <IconButton
               color="inherit"
               size="small"
-              href="https://www.linkedin.com/company/mui/"
+              href="https://linkedin.com/in/martín-fernando-prado"
               aria-label="LinkedIn"
               sx={{ alignSelf: 'center' }}
             >

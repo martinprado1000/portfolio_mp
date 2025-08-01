@@ -20,6 +20,7 @@ import Aptitudes from "./Aptitudes";
 import { HistorialDeEmpleos } from "./HistorialDeEmpleos";
 import Education from "./Education";
 import { Aplicactions } from "./Aplications";
+import ProfessionalSummary from "./ProfessionalSummary";
 
 // const cardData = [
 //   {
@@ -123,6 +124,9 @@ export default function MainContent() {
       </Box>
       <Box id="aptitudes">
         <Aptitudes />
+      </Box>
+      <Box id="aplicaciones">
+        <ProfessionalSummary />
       </Box>
       <Box id="educacion">
         <Education />
