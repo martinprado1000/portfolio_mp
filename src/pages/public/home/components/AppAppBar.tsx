@@ -1,5 +1,5 @@
 import * as React from "react";
-import { useNavigate } from 'react-router-dom';
+import { useNavigate } from "react-router-dom";
 import { alpha, styled } from "@mui/material/styles";
 import Box from "@mui/material/Box";
 import AppBar from "@mui/material/AppBar";
@@ -32,7 +32,6 @@ const StyledToolbar = styled(Toolbar)(({ theme }) => ({
 }));
 
 export default function AppAppBar() {
-
   const scrollToSection = (sectionId: string) => {
     const element = document.getElementById(sectionId);
     if (element) {
@@ -64,24 +63,45 @@ export default function AppAppBar() {
           >
             <MpIcon />
             <Box sx={{ display: { xs: "none", md: "flex" } }}>
-              <Button variant="text" color="info" size="small" onClick={() => scrollToSection('datos-personales')}>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => scrollToSection("datos-personales")}
+              >
                 Datos personales
               </Button>
-              <Button variant="text" color="info" size="small" onClick={() => scrollToSection('aptitudes')}>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => scrollToSection("aptitudes")}
+              >
                 Aptitudes
               </Button>
-              <Button variant="text" color="info" size="small" onClick={() => scrollToSection('historial-empleos')}>
-                Historial de empleos
-              </Button>
-              <Button variant="text" color="info" size="small" onClick={() => scrollToSection('educacion')}>
+              <Button
+                variant="text"
+                color="info"
+                size="small"
+                onClick={() => scrollToSection("educacion")}
+              >
                 Educación
               </Button>
               <Button
                 variant="text"
                 color="info"
                 size="small"
+                onClick={() => scrollToSection("historial-empleos")}
+              >
+                Historial de empleos
+              </Button>
+
+              <Button
+                variant="text"
+                color="info"
+                size="small"
                 sx={{ minWidth: 0 }}
-                onClick={() => scrollToSection('aplicaciones')}
+                onClick={() => scrollToSection("aplicaciones")}
               >
                 Mis aplicaciones
               </Button>
