@@ -8,10 +8,11 @@ import {
   Tooltip 
 } from '@mui/material';
 import { FaNodeJs, FaReact, FaBootstrap, FaGit, FaDocker } from "react-icons/fa6";
-import { SiJavascript, SiMongodb, SiMui, SiMysql, SiPhp, SiNestjs } from "react-icons/si";
+import { SiJavascript, SiTypescript, SiMongodb, SiMui, SiMysql, SiPhp, SiNestjs } from "react-icons/si";
 
 const skills = [
   { icon: <SiJavascript size={24} />, name: 'JavaScript', color: '#F7DF1E' },
+  { icon: <SiTypescript size={24} />, name: 'TypeScript', color: '#3178C6' },
   { icon: <SiNestjs size={24} />, name: 'Nest.js', color: '#E0234E' },
   { icon: <FaNodeJs size={24} />, name: 'Node.js', color: '#68A063' },
   { icon: <FaReact size={24} />, name: 'React', color: '#61DAFB' },
@@ -20,7 +21,7 @@ const skills = [
   { icon: <FaBootstrap size={24} />, name: 'Bootstrap', color: '#7952B3' },
   { icon: <FaGit size={24} />, name: 'Git', color: '#F05032' },
   { icon: <FaDocker size={24} />, name: 'Docker', color: '#2496ED' },
-  { icon: <SiMysql size={24} />, name: 'MySQL', color: '#4479A1' },
+  // { icon: <SiMysql size={24} />, name: 'MySQL', color: '#4479A1' },
   { icon: <SiPhp size={24} />, name: 'PHP', color: '#777BB4' },
 ];
 

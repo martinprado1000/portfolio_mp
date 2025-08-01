@@ -9,12 +9,10 @@ import WorkspacePremiumIcon from "@mui/icons-material/WorkspacePremium";
 import CloseIcon from "@mui/icons-material/Close";
 import IconButton from "@mui/material/IconButton";
 import NavigateNextRoundedIcon from "@mui/icons-material/NavigateNextRounded";
-import {
-  FaNodeJs,
-  FaReact,
-} from "react-icons/fa6";
+import { FaNodeJs, FaReact } from "react-icons/fa6";
 import {
   SiJavascript,
+  SiTypescript,
   SiMongodb,
   SiMysql,
   SiPhp,
@@ -36,6 +34,11 @@ const info = [
         color: "#CA4245",
       },
       {
+        icon: <SiTypescript size={24} />,
+        name: "TypeScrip",
+        color: "#3178C6",
+      },
+      {
         icon: <SiJavascript size={24} />,
         name: "JavaScript.js",
         color: "#F7DF1E",
@@ -50,14 +53,14 @@ const info = [
     image: [
       { icon: <SiNestjs size={24} />, name: "Nest.js", color: "#E0234E" },
       {
-        icon: <SiJavascript size={24} />,
-        name: "JavaScript.js",
-        color: "#F7DF1E",
-      },
-      {
         icon: <SiMongodb size={24} />,
         name: "Mongodb",
         color: "#47A248",
+      },
+      {
+        icon: <SiTypescript size={24} />,
+        name: "TypeScrip",
+        color: "#3178C6",
       },
     ],
     certificate: "/cert_nest.PNG",
@@ -219,7 +222,7 @@ function Information({ image, date }) {
   );
 }
 
-export default function Latest() {
+export default function Education() {
   const [focusedCardIndex, setFocusedCardIndex] = React.useState<number | null>(
     null
   );

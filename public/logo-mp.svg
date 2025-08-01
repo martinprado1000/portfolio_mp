@@ -1,0 +1,10 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200">
+  <defs>
+    <linearGradient id="grad1" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" stop-color="#00D3AB" />
+      <stop offset="1200%" stop-color="rgb(11, 53, 160)" />
+    </linearGradient>
+  </defs>
+  <circle cx="100" cy="100" r="95" fill="url(#grad1)" stroke="white" stroke-width="5"/>
+  <text x="100" y="100" text-anchor="middle" dominant-baseline="central" font-size="90" font-weight="bold" fill="white" font-family="Arial, Helvetica, sans-serif">MP</text>
+</svg>

@@ -18,7 +18,7 @@ import RssFeedRoundedIcon from "@mui/icons-material/RssFeedRounded";
 import MyCard from "./MyCard";
 import Aptitudes from "./Aptitudes";
 import { HistorialDeEmpleos } from "./HistorialDeEmpleos";
-import Latest from "./Latest";
+import Education from "./Education";
 import { Aplicactions } from "./Aplications";
 
 // const cardData = [
@@ -125,7 +125,7 @@ export default function MainContent() {
         <Aptitudes />
       </Box>
       <Box id="educacion">
-        <Latest />
+        <Education />
       </Box>
       <Box id="historial-empleos">
         <HistorialDeEmpleos />

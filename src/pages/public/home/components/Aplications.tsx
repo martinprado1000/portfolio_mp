@@ -229,7 +229,7 @@ export function Aplicactions() {
                 }}
                 onClick={() =>
                   handleOpenModal(
-                    "Documentación de Ecommerce API",
+                    "Ecommerce API",
                     "El backed esta desarrollado en Node.js. Tecnologias usadas en el bachend: Express, mongoose, connect-mongo, dotenv, cookie-parser, jsonwebtoken, nodemailer, passport, passport-jwt, express-validator.El frontend esta desarrollado en React. Página responsive.Tecnologias usadas en el frontend: Vite, react-bootstrap, react-router-dom, react-hook-form, js-cookie, sweetalert2.",
                     "PODES PROBAR LA APLICACION haciendo click en el icono website, registrate y listo. Si lo queres probar como usuario superAdministrador (Podras crear, editar y eliminar usuarios y productos) logueate con las siguientes credenciales, Usuario: superadmin@superadmin.com Password: 123456",
                     "¡IMPORTANTE! La aplicación está alojada en un hosting gratuito, por lo tanto, está suspendida y demora aproximadamente 1 minuto en traer el primer dato o ejecutar la primera consulta."
@@ -406,13 +406,13 @@ export function Aplicactions() {
               <Typography gutterBottom variant="h6" component="div">
                 Desarrollado con Node y React.
               </Typography>
-              <StyledTypography
+              {/* <StyledTypography
                 variant="body2"
                 color="text.secondary"
                 gutterBottom
               >
                 {cardData[0].description}
-              </StyledTypography>
+              </StyledTypography> */}
             </SyledCardContent>
             <Box
               sx={{
@@ -433,7 +433,7 @@ export function Aplicactions() {
                 }}
                 onClick={() =>
                   handleOpenModal(
-                    "Documentación de Chat API",
+                    "Chat API",
                     "El backed esta desarrollado en Node.js. Tecnologias usadas en el bachend: Express, socket.io, mongoose, connect-mongo, dotenv, cookie-parser, jsonwebtoken, nodemailer, passport, passport-jwt, express-validator. El frontend esta desarrollado en React. Página responsive. Tecnologias usadas en el frontend: Vite, react-bootstrap, socket.io-client, react-router-dom, react-hook-form, js-cookie, sweetalert2.",
                     "PODES PROBAR LA APLICACION haciendo click en el icono website, registrate y listo. Si lo queres probar como usuario superAdministrador (Podras crear, editar y eliminar usuarios) logueate con Usuario: superadmin@superadmin.com Password: 123456",
                     "¡IMPORTANTE! La aplicación está alojada en un hosting gratuito, por lo tanto, está suspendida y demora aproximadamente 1 minuto en traer el primer dato o ejecutar la primera consulta."
@@ -507,13 +507,13 @@ export function Aplicactions() {
               <Typography gutterBottom variant="h6" component="div">
                 Desarrollado con Nest y React
               </Typography>
-              <StyledTypography
+              {/* <StyledTypography
                 variant="body2"
                 color="text.secondary"
                 gutterBottom
               >
                 {cardData[1].description}
-              </StyledTypography>
+              </StyledTypography> */}
             </SyledCardContent>
             <Box
               sx={{
@@ -534,7 +534,7 @@ export function Aplicactions() {
                 }}
                 onClick={() =>
                   handleOpenModal(
-                    "Documentación de Transacciones API",
+                    "Transacciones API",
                     "El backed esta desarrollado en Nest.js. Tecnologias usadas en el bachend: Nest.js, mongoose, jsonwebtoken, nodemailer, passport, passport-jwt, class-validator.El frontend esta desarrollado en React-Vite. Página responsive.Tecnologias usadas en el frontend: Vite, react-materialUI, react-router-dom, react-hook-form, sweetalert2.",
                     "PODES PROBAR LA APLICACION haciendo click en el icono website, registrate y listo. Si lo queres probar como usuario superAdministrador (Podras crear, editar y eliminar usuarios y productos) logueate con las siguientes credenciales, Usuario: admin@google.com Password: Test123*",
                     "¡IMPORTANTE! La aplicación está alojada en un hosting gratuito, por lo tanto, está suspendida y demora aproximadamente 1 minuto en traer el primer dato o ejecutar la primera consulta."
