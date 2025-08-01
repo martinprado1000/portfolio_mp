@@ -1,0 +1,48 @@
+{
+  "name": "portfolio_mp",
+  "private": true,
+  "version": "0.0.0",
+  "type": "module",
+  "scripts": {
+    "dev": "vite",
+    "build": "vite build",
+    "lint": "eslint . --ext js,jsx --report-unused-disable-directives --max-warnings 0",
+    "preview": "vite preview"
+  },
+  "dependencies": {
+    "@emotion/react": "^11.14.0",
+    "@emotion/styled": "^11.14.0",
+    "@fontsource/roboto": "^5.2.5",
+    "@mui/icons-material": "^7.0.2",
+    "@mui/material": "^7.0.2",
+    "@mui/x-charts": "^7.28.0",
+    "@mui/x-data-grid": "^7.28.3",
+    "@mui/x-data-grid-pro": "^8.0.0",
+    "@mui/x-date-pickers": "^7.28.3",
+    "@mui/x-tree-view": "^7.28.1",
+    "bootstrap": "^5.3.2",
+    "date-fns": "^3.0.2-rc.1",
+    "dayjs": "^1.11.13",
+    "js-cookie": "^3.0.5",
+    "react": "^18.2.0",
+    "react-bootstrap": "^2.9.2",
+    "react-datepicker": "^6.2.0",
+    "react-dom": "^18.2.0",
+    "react-hook-form": "^7.49.3",
+    "react-icons": "^5.5.0",
+    "react-router-dom": "^7.5.0",
+    "sweetalert2": "^11.6.13"
+  },
+  "devDependencies": {
+    "@types/react": "^18.2.43",
+    "@types/react-datepicker": "^6.2.0",
+    "@types/react-dom": "^18.2.17",
+    "@vitejs/plugin-react": "^4.2.1",
+    "@vitejs/plugin-react-swc": "^3.10.2",
+    "eslint": "^8.55.0",
+    "eslint-plugin-react": "^7.33.2",
+    "eslint-plugin-react-hooks": "^4.6.0",
+    "eslint-plugin-react-refresh": "^0.4.5",
+    "vite": "^6.2.3"
+  }
+}
