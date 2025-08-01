@@ -125,7 +125,7 @@ export default function MainContent() {
       <Box id="aptitudes">
         <Aptitudes />
       </Box>
-      <Box id="aplicaciones">
+      <Box id="ResumenPersonal">
         <ProfessionalSummary />
       </Box>
       <Box id="educacion">

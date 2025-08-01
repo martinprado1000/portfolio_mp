@@ -67,7 +67,7 @@ export default function AppAppBar() {
                 variant="text"
                 color="info"
                 size="small"
-                onClick={() => scrollToSection("datos-personales")}
+                onClick={() => scrollToSection("ResumenPersonal")}
               >
                 Datos personales
               </Button>
