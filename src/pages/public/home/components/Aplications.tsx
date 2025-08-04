@@ -501,7 +501,7 @@ export function Aplicactions() {
               }}
             />
             <SyledCardContent>
-              <Typography gutterBottom variant="caption" component="div">
+              <Typography gutterBottom variant="h3" component="div">
                 Transactions API
               </Typography>
               <Typography gutterBottom variant="h6" component="div">
