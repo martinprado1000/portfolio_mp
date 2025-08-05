@@ -148,13 +148,12 @@ export default function AppAppBar() {
                     <CloseRoundedIcon />
                   </IconButton>
                 </Box>
-                <MenuItem>Features</MenuItem>
-                <MenuItem>Testimonials</MenuItem>
-                <MenuItem>Highlights</MenuItem>
-                <MenuItem>Pricing</MenuItem>
-                <MenuItem>FAQ</MenuItem>
-                <MenuItem>Blog</MenuItem>
-                <Divider sx={{ my: 3 }} />
+                <MenuItem onClick={() => scrollToSection("aptitudes")}>Aptitudes</MenuItem>
+                <MenuItem onClick={() => scrollToSection("ResumenPersonal")}>Datos personales</MenuItem>
+                <MenuItem onClick={() => scrollToSection("educacion")}>Educacíon</MenuItem>
+                <MenuItem onClick={() => scrollToSection("historial-empleos")}>Historial de empleos</MenuItem>
+                <MenuItem onClick={() => scrollToSection("aplicaciones")}>Mis aplicaciones</MenuItem>
+                {/* <Divider sx={{ my: 3 }} />
                 <MenuItem>
                   <Button color="primary" variant="contained" fullWidth>
                     Sign up
@@ -164,7 +163,7 @@ export default function AppAppBar() {
                   <Button color="primary" variant="outlined" fullWidth>
                     Sign in
                   </Button>
-                </MenuItem>
+                </MenuItem> */}
               </Box>
             </Drawer>
           </Box>
