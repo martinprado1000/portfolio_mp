@@ -67,6 +67,7 @@ export default function Footer() {
               color="inherit"
               size="small"
               href="https://portfolio-mp.onrender.com/"
+              target="_blank"
               aria-label="Website"
               sx={{ alignSelf: 'center' }}
             >
@@ -85,6 +86,7 @@ export default function Footer() {
               color="inherit"
               size="small"
               href="https://linkedin.com/in/martín-fernando-prado"
+              target="_blank"
               aria-label="LinkedIn"
               sx={{ alignSelf: 'center' }}
             >

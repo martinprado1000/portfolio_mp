@@ -14,7 +14,37 @@ import {
   ListItemText,
   Avatar,
 } from "@mui/material";
-import { Email, Phone, LocationOn, LinkedIn } from "@mui/icons-material";
+import {
+  Email,
+  Phone,
+  LocationOn,
+  LinkedIn,
+  GetApp,
+} from "@mui/icons-material";
+
+import { jsPDF } from "jspdf";
+
+const downloadPDF = () => {
+  const doc = new jsPDF();
+
+  doc.setFontSize(18);
+  doc.text("Martín Fernando Prado", 10, 20);
+  doc.setFontSize(14);
+  doc.text(
+    "Desarrollador de aplicaciones, stack MERN | Técnico en infraestructura",
+    10,
+    30
+  );
+
+  doc.setFontSize(12);
+  doc.text("Dirección: Guemes 2147, Rosario, Santa Fe, 2000 (AR)", 10, 45);
+  doc.text("Email: martinprado1000@gmail.com", 10, 55);
+  doc.text("Teléfono: +54 341 2725888", 10, 65);
+  doc.text("LinkedIn: www.linkedin.com/in/martín-fernando-prado", 10, 75);
+  doc.text("Mi portfolio: www.portfolio-mp.onrender.com", 10, 85);
+
+  doc.save("Martin_Prado_Contacto.pdf");
+};
 
 export default function MyCard() {
   const theme = useTheme();
@@ -44,7 +74,7 @@ export default function MyCard() {
           boxShadow: 2,
         }}
       >
-        <Avatar 
+        <Avatar
           src="/MartinPrado.jpg"
           alt="Imagen Martín Prado"
           sx={{
@@ -66,10 +96,11 @@ export default function MyCard() {
       >
         <CardContent sx={{ p: 1 }}>
           <Typography variant="h5" component="div" fontWeight="bold">
-            Martín Fernando Pradooo
+            Martín Fernando Prado
           </Typography>
           <Typography variant="subtitle1" color="text.secondary" gutterBottom>
-            Desarrollador de aplicaciones, stak MERN | Técnico en infraestructura
+            Desarrollador de aplicaciones, stak MERN | Técnico en
+            infraestructura
           </Typography>
           <Divider sx={{ my: 1 }} />
           <List dense disablePadding>
@@ -103,10 +134,16 @@ export default function MyCard() {
               <ListItemIcon sx={{ minWidth: 32 }}>
                 <Phone fontSize="small" color="primary" />
               </ListItemIcon>
-              <ListItemText
-                primary="341-2725888"
-                primaryTypographyProps={{ variant: "body2" }}
-              />
+              <Link
+                href="https://wa.me/+5493412725888" // Reemplaza con tu número completo incluyendo código de país
+                target="_blank"
+                underline="hover"
+                color="inherit"
+                variant="body2"
+                sx={{ display: "flex", alignItems: "center" }}
+              >
+                341-2725888
+              </Link>
             </ListItem>
 
             <ListItem disableGutters>
@@ -114,7 +151,7 @@ export default function MyCard() {
                 <LinkedIn fontSize="small" color="primary" />
               </ListItemIcon>
               <Link
-                href="https://www.linkedin.com/in/mart%C3%ADn-fernando-prado-396a80227/"
+                href="www.linkedin.com/in/martín-fernando-prado"
                 target="_blank"
                 underline="hover"
                 color="inherit"
@@ -125,7 +162,66 @@ export default function MyCard() {
             </ListItem>
           </List>
         </CardContent>
+
+        <Divider />
+
+        <CardContent>
+          <List dense disablePadding>
+            <ListItem
+              disableGutters
+              button
+              onClick={downloadPDF}
+              sx={{
+                "&:hover": {
+                  cursor: 'pointer',
+                  backgroundColor: "action.hover",
+                  borderRadius: 1,
+                },
+              }}
+            >
+              <ListItemIcon sx={{ minWidth: 32 }}>
+                <GetApp fontSize="small" color="primary" />
+              </ListItemIcon>
+              <ListItemText
+                primary="Descargar información."
+              />
+            </ListItem>
+          </List>
+        </CardContent>
       </Box>
+
+      {/* <Box
+        sx={{
+          display: "flex",
+          flexDirection: "column",
+          flexGrow: 1,
+        }}
+      >
+        <CardContent sx={{ p: 1 }}>
+
+          <List dense disablePadding>
+            <ListItem 
+              disableGutters
+              button
+              onClick={downloadPDF}
+              sx={{
+                '&:hover': {
+                  backgroundColor: 'action.hover',
+                  borderRadius: 1
+                }
+              }}
+            >
+              <ListItemIcon sx={{ minWidth: 32 }}>
+                <GetApp fontSize="small" color="primary" />
+              </ListItemIcon>
+              <ListItemText
+                primary="Descargar información."
+                primaryTypographyProps={{ variant: "body2" }}
+              />
+            </ListItem>
+          </List>
+        </CardContent>
+      </Box> */}
     </Card>
   );
 }

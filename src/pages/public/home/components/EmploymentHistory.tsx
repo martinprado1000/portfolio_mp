@@ -55,7 +55,7 @@ const StyledTypography = styled(Typography)({
   wordBreak: "break-word",
 });
 
-export function HistorialDeEmpleos() {
+export function EmploymentHistory() {
 
   const [focusedCardIndex, setFocusedCardIndex] = React.useState<number | null>(
     null

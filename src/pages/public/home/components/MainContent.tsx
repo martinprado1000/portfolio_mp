@@ -17,7 +17,7 @@ import SearchRoundedIcon from "@mui/icons-material/SearchRounded";
 import RssFeedRoundedIcon from "@mui/icons-material/RssFeedRounded";
 import MyCard from "./MyCard";
 import Aptitudes from "./Aptitudes";
-import { HistorialDeEmpleos } from "./HistorialDeEmpleos";
+import { EmploymentHistory } from "./EmploymentHistory";
 import Education from "./Education";
 import { Aplicactions } from "./Aplications";
 import ProfessionalSummary from "./ProfessionalSummary";
@@ -132,7 +132,7 @@ export default function MainContent() {
         <Education />
       </Box>
       <Box id="historial-empleos">
-        <HistorialDeEmpleos />
+        <EmploymentHistory />
       </Box>
       <Box id="aplicaciones">
         <Aplicactions />
