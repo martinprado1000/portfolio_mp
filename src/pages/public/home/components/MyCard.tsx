@@ -23,7 +23,7 @@ import {
 } from "@mui/icons-material";
 
 const downloadPDF = () => {
-  const pdfUrl = '${process.env.PUBLIC_URL}/public/CV_Martin_Prado-V2.pdf';
+  const pdfUrl = `${process.env.PUBLIC_URL}/public/CV_Martin_Prado-V2.pdf`;
   // Crear un enlace temporal
   const link = document.createElement('a');
   link.href = pdfUrl;
