@@ -22,28 +22,18 @@ import {
   GetApp,
 } from "@mui/icons-material";
 
-import { jsPDF } from "jspdf";
-
 const downloadPDF = () => {
-  const doc = new jsPDF();
-
-  doc.setFontSize(18);
-  doc.text("Martín Fernando Prado", 10, 20);
-  doc.setFontSize(14);
-  doc.text(
-    "Desarrollador de aplicaciones, stack MERN | Técnico en infraestructura",
-    10,
-    30
-  );
-
-  doc.setFontSize(12);
-  doc.text("Dirección: Guemes 2147, Rosario, Santa Fe, 2000 (AR)", 10, 45);
-  doc.text("Email: martinprado1000@gmail.com", 10, 55);
-  doc.text("Teléfono: +54 341 2725888", 10, 65);
-  doc.text("LinkedIn: www.linkedin.com/in/martín-fernando-prado", 10, 75);
-  doc.text("Mi portfolio: www.portfolio-mp.onrender.com", 10, 85);
-
-  doc.save("Martin_Prado_Contacto.pdf");
+  const pdfUrl = '/public/CV_Martin_Prado-V2.pdf';
+  // Crear un enlace temporal
+  const link = document.createElement('a');
+  link.href = pdfUrl;
+  // Esto hará que el archivo se descargue
+  link.setAttribute('download', 'CV_Martin_Prado-V2.pdf'); 
+  // enlace al DOM y hacer click
+  document.body.appendChild(link);
+  link.click();
+  // Limpiar
+  document.body.removeChild(link);
 };
 
 export default function MyCard() {
