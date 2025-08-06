@@ -20,17 +20,12 @@ import {
   LocationOn,
   LinkedIn,
   GetApp,
-} from "@mui/icons-material";
+} from "@mui/icons-material"; 
 const PUBLIC_URL: string = import.meta.env.VITE_PUBLIC_URL
 
 const downloadPDF = () => {
-  
-  console.log(PUBLIC_URL)
-  // console.log(`${import.meta.env.PUBLIC_URL}/public/CV_Martin_Prado-V2.pdf`)
-  const pdfUrl = `${PUBLIC_URL}/CV_Martin_Prado-V2.pdf`;
-  console.log(pdfUrl)
-  //const pdfUrl = 'C:\Users\Martín Prado\Desktop\Notebook Lenovo\PROGRAMACION\PROYECTOS\Proyecto_000-portfolio\portfolio_mp\public\Martin_Prado_CV.pdf';
-  // Crear un enlace temporal
+  //console.log(PUBLIC_URL)
+  const pdfUrl = `${PUBLIC_URL}/CV_Martin_Prado-V2.pdf`; // Crear un enlace temporal
   const link = document.createElement('a');
   link.href = pdfUrl;
   // Esto hará que el archivo se descargue
