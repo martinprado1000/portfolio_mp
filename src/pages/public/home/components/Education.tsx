@@ -67,7 +67,7 @@ const info = [
   },
   {
     date: "Diciembre. 2023",
-    title: "Codehouse",
+    title: "Coderhouse",
     description: "Programador Backend, Node.js.",
     image: [
       { icon: <FaNodeJs size={24} />, name: "Node.js", color: "#68A063" },
@@ -86,7 +86,7 @@ const info = [
   },
   {
     date: "Agosto 2024",
-    title: "Codehouse",
+    title: "Coderhouse",
     description: "Programador Frontend, React.js.",
     image: [
       { icon: <FaReact size={24} />, name: "React.js", color: "#61DAFB" },
@@ -94,6 +94,11 @@ const info = [
         icon: <SiJavascript size={24} />,
         name: "JavaScript.js",
         color: "#F7DF1E",
+      },
+      {
+        icon: <SiTypescript size={24} />,
+        name: "TypeScrip",
+        color: "#3178C6",
       },
     ],
     certificate: "/cert_react.png",
@@ -105,6 +110,11 @@ const info = [
     image: [
       { icon: <SiPhp size={24} />, name: "Php", color: "#777BB4" },
       { icon: <SiMysql size={24} />, name: "MySQL", color: "#4479A1" },
+      {
+        icon: <SiJavascript size={24} />,
+        name: "JavaScript.js",
+        color: "#F7DF1E",
+      },
     ],
   },
   {
