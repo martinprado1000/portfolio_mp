@@ -268,9 +268,9 @@ export default function Education() {
             key={index}
             size={{ xs: 12, sm: 6 }}
             sx={{
-              border: "1px solid #383737ff", // Borde gris claro
-              borderRadius: "8px", // Esquinas redondeadas
-              p: 2, // Padding interno para que no pegue el contenido al borde
+              border: "1px solid #383737ff",
+              borderRadius: "8px",
+              p: 2,
             }}
           >
             <Box
