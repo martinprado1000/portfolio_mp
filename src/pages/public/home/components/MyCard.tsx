@@ -147,7 +147,7 @@ export default function MyCard() {
                 <LinkedIn fontSize="small" color="primary" />
               </ListItemIcon>
               <Link
-                href="www.linkedin.com/in/martín-fernando-prado"
+                href="https://www.linkedin.com/in/mart%C3%ADn-fernando-prado/"
                 target="_blank"
                 underline="hover"
                 color="inherit"
