@@ -177,6 +177,107 @@ export function Aplicactions() {
         <Grid size={{ xs: 12, md: 6 }}>
           <SyledCard
             variant="outlined"
+            onFocus={() => handleFocus(1)}
+            onBlur={handleBlur}
+            tabIndex={0}
+            className={focusedCardIndex === 1 ? "Mui-focused" : ""}
+          >
+            <CardMedia
+              component="img"
+              alt="green iguana"
+              image={"./transactionsV2.PNG"}
+              aspect-ratio="16 / 9"
+              sx={{
+                height: 200,
+                objectFit: "contain",
+                backgroundColor: "black",
+                width: "100%",
+                p: 1,
+                //borderBottom: "1px solid #f0f0f0"
+              }}
+            />
+            <SyledCardContent>
+              <Typography gutterBottom variant="h3" component="div">
+                Transactions API
+              </Typography>
+              <Typography gutterBottom variant="h6" component="div">
+                Desarrollado con Nest y React
+              </Typography>
+              {/* <StyledTypography
+                variant="body2"
+                color="text.secondary"
+                gutterBottom
+              >
+                {cardData[1].description}
+              </StyledTypography> */}
+            </SyledCardContent>
+            <Box
+              sx={{
+                display: "flex",
+                flexDirection: "column",
+                p: 2,
+                gap: 1,
+              }}
+            >
+              <Button
+                variant="outlined"
+                fullWidth
+                startIcon={<MenuBookIcon />}
+                sx={{
+                  textTransform: "none",
+                  py: 1,
+                  justifyContent: "flex-start",
+                }}
+                onClick={() =>
+                  handleOpenModal(
+                    "Transacciones API",
+                    "El backed esta desarrollado en Nest.js. Tecnologias usadas en el bachend: Nest.js, mongoose, jsonwebtoken, nodemailer, passport, passport-jwt, class-validator.El frontend esta desarrollado en React-Vite. Página responsive.Tecnologias usadas en el frontend: Vite, react-materialUI, react-router-dom, react-hook-form, sweetalert2.",
+                    "PODES PROBAR LA APLICACION haciendo click en el icono website, registrate y listo. Si lo queres probar como usuario superAdministrador (Podras crear, editar y eliminar usuarios y transacciones) logueate con las siguientes credenciales, Usuario: admin@google.com Password: Test123*",
+                    "¡IMPORTANTE! La aplicación está alojada en un hosting gratuito, por lo tanto, está suspendida y demora aproximadamente 1 minuto en traer el primer dato o ejecutar la primera consulta."
+                  )
+                }
+              >
+                Documentación:
+              </Button>
+              <Button
+                variant="outlined"
+                fullWidth
+                startIcon={<GitHubIcon />}
+                sx={{
+                  textTransform: "none",
+                  py: 1,
+                  justifyContent: "flex-start",
+                  color: "text.primary",
+                }}
+                component="a"
+                href="https://github.com/martinprado1000/proyecto-03-transactions-backend" // Reemplaza con tu URL
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Código fuente
+              </Button>
+              <Button
+                variant="contained"
+                fullWidth
+                startIcon={<PublicIcon />}
+                sx={{
+                  textTransform: "none",
+                  py: 1,
+                  justifyContent: "flex-start",
+                }}
+                component="a"
+                href="https://proyecto-03-transactions-frontend.onrender.com/" // Reemplaza con tu URL
+                target="_blank"
+                rel="noopener noreferrer"
+              >
+                Ver sitio web
+              </Button>
+            </Box>
+          </SyledCard>
+        </Grid>
+        <Grid size={{ xs: 12, md: 6 }}>
+          <SyledCard
+            variant="outlined"
             onFocus={() => handleFocus(0)}
             onBlur={handleBlur}
             tabIndex={0}
@@ -375,9 +476,6 @@ export function Aplicactions() {
             </Box>
           </SyledCard>
         </Grid>
-      </Grid>
-
-      <Grid container spacing={2} columns={12} sx={{ mt: 3 }}>
         <Grid size={{ xs: 12, md: 6 }}>
           <SyledCard
             variant="outlined"
@@ -474,107 +572,6 @@ export function Aplicactions() {
                 rel="noopener noreferrer"
               >
                 Ver sitio web
-              </Button>
-            </Box>
-          </SyledCard>
-        </Grid>
-        <Grid size={{ xs: 12, md: 6 }}>
-          <SyledCard
-            variant="outlined"
-            onFocus={() => handleFocus(1)}
-            onBlur={handleBlur}
-            tabIndex={0}
-            className={focusedCardIndex === 1 ? "Mui-focused" : ""}
-          >
-            <CardMedia
-              component="img"
-              alt="green iguana"
-              image={"./transactions.PNG"}
-              aspect-ratio="16 / 9"
-              sx={{
-                height: 200,
-                objectFit: "contain",
-                backgroundColor: "black",
-                width: "100%",
-                p: 1,
-                //borderBottom: "1px solid #f0f0f0"
-              }}
-            />
-            <SyledCardContent>
-              <Typography gutterBottom variant="h3" component="div">
-                Transactions API
-              </Typography>
-              <Typography gutterBottom variant="h6" component="div">
-                Desarrollado con Nest y React
-              </Typography>
-              {/* <StyledTypography
-                variant="body2"
-                color="text.secondary"
-                gutterBottom
-              >
-                {cardData[1].description}
-              </StyledTypography> */}
-            </SyledCardContent>
-            <Box
-              sx={{
-                display: "flex",
-                flexDirection: "column",
-                p: 2,
-                gap: 1,
-              }}
-            >
-              <Button
-                variant="outlined"
-                fullWidth
-                startIcon={<MenuBookIcon />}
-                sx={{
-                  textTransform: "none",
-                  py: 1,
-                  justifyContent: "flex-start",
-                }}
-                onClick={() =>
-                  handleOpenModal(
-                    "Transacciones API",
-                    "El backed esta desarrollado en Nest.js. Tecnologias usadas en el bachend: Nest.js, mongoose, jsonwebtoken, nodemailer, passport, passport-jwt, class-validator.El frontend esta desarrollado en React-Vite. Página responsive.Tecnologias usadas en el frontend: Vite, react-materialUI, react-router-dom, react-hook-form, sweetalert2.",
-                    "PODES PROBAR LA APLICACION haciendo click en el icono website, registrate y listo. Si lo queres probar como usuario superAdministrador (Podras crear, editar y eliminar usuarios y productos) logueate con las siguientes credenciales, Usuario: admin@google.com Password: Test123*",
-                    "¡IMPORTANTE! La aplicación está alojada en un hosting gratuito, por lo tanto, está suspendida y demora aproximadamente 1 minuto en traer el primer dato o ejecutar la primera consulta."
-                  )
-                }
-              >
-                Documentación:
-              </Button>
-              <Button
-                variant="outlined"
-                fullWidth
-                startIcon={<GitHubIcon />}
-                sx={{
-                  textTransform: "none",
-                  py: 1,
-                  justifyContent: "flex-start",
-                  color: "text.primary",
-                }}
-                component="a"
-                href="https://github.com/tu-usuario/tu-repositorio" // Reemplaza con tu URL
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Código fuente
-              </Button>
-              <Button
-                variant="contained"
-                fullWidth
-                startIcon={<PublicIcon />}
-                sx={{
-                  textTransform: "none",
-                  py: 1,
-                  justifyContent: "flex-start",
-                }}
-                component="a"
-                //href="https://github.com/tu-usuario/tu-repositorio" // Reemplaza con tu URL
-                target="_blank"
-                rel="noopener noreferrer"
-              >
-                Ver sitio web; APP EN REPARACIÓN
               </Button>
             </Box>
           </SyledCard>
