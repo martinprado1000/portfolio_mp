@@ -25,10 +25,10 @@ import {
 const PUBLIC_URL: string = import.meta.env.VITE_PUBLIC_URL;
 
 const downloadPDF = () => {
-  const pdfUrl = `${PUBLIC_URL}/CV_Martin_Prado-V2.pdf`;
+  const pdfUrl = `${PUBLIC_URL}/Martin_Prado_CV.pdf`;
   const link = document.createElement('a');
   link.href = pdfUrl;
-  link.setAttribute('download', 'CV_Martin_Prado-V2.pdf'); 
+  link.setAttribute('download', 'Martin_Prado_CV.pdf'); 
   document.body.appendChild(link);
   link.click();
   document.body.removeChild(link);
